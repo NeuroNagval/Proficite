@@ -1,0 +1,335 @@
+﻿<?xml version="1.0"?>
+<XmlConfig xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <!--НАСТРОЙКИ ПОДКЛЮЧЕНИЯ-->
+  <!--Токен бота. Как получить смотри в мануале-->
+  <BotToken>747992154:AAGjh-kuko5OQE730q8CGHv_Fs9Vmom_vys</BotToken>
+  <!--ИД чата, куда будет отправляться весь контент. ВНИМАНИЕ - не путать ИД чата с ЗАГОЛОВКОМ! Так же ИД должно начинатся с @-->
+  <PostChatId>@proficite</PostChatId>
+  <!--Размер захватываемого изображения со страниц. Не рекомендуется менять - возможны мелкие ошибки в изображениях.-->
+  <ScreenshotFrameSize>
+    <X>1000</X>
+    <Y>1000</Y>
+  </ScreenshotFrameSize>
+  <!--Время, отведённое на загрузку страницы. Если будет возвращать пустое окно или окно с ошибкой соединения, не прогруженную страницу и тд, 
+  то следует проверить существование ресурса. Если он живой - увеличить этот параметр. Измеряется в милисекундах.-->
+  <ScreenCaptureDelay>50000</ScreenCaptureDelay>
+  <!--Путь к иконке, которая наносится на изображение с курсами валют. Оптимальный размер картинки 80х80 - 100х100 пикселей. Может быть любого размера.-->
+  <WatermarkIcoPath>Data\Ico.png</WatermarkIcoPath>
+  <!--Ид группы, из которой берутся посты. Внимание - у групп ид отрицательные!-->
+  <VKGroupId>-46216400</VKGroupId>
+  <!--Частота проверки на наличие новых постов. Одна единица значения равна 15секундам (0.25минуты)-->
+  <VKPostCheckPeriod>20</VKPostCheckPeriod>
+  <!--Номер или @mail пользователя для авторизации в ВК (советую создать новового пользователя)-->
+  <VKUserBotProviderLogin>+79787844801</VKUserBotProviderLogin>
+  <!--Пароль пользователя-->
+  <VKUserBotProviderPassword>hah6251GdbGVHhF</VKUserBotProviderPassword>
+  <!--Ид приложения для доступа к Api вк (смотреть инструкцию)-->
+  <VkAppID>6762963</VkAppID>
+  <!--Включает(true)/отключает(false) репост с группы Вк-->
+  <VkRepostEnable>true</VkRepostEnable>
+
+   <!--ПОСТЫ-->
+  <!--Устанавливает переодичность выполнения утренней рутины. Массив, что бы добавить ещё время - добавить строку типа: <string>08:22</string>-->
+  <MorningPostTime>
+    <Monday>
+      <!--Понедельник-->
+      <string>08:22</string>
+    </Monday>
+    <Tuesday>
+      <!--Вторник-->
+      <string>08:22</string>
+    </Tuesday>
+    <Wednesday>
+      <!--Среда-->
+      <string>08:22</string>
+    </Wednesday>
+    <Thursday>
+      <!--Четверг-->
+      <string>08:22</string>
+    </Thursday>
+    <Friday>
+      <!--Пятница-->
+      <string>08:22</string>
+    </Friday>
+    <Saturday>
+      <!--Субота-->
+      <string>09:22</string>
+    </Saturday>
+    <Sunday>
+      <!--Воскресенье-->
+      <string>10:22</string>
+    </Sunday>
+  </MorningPostTime>
+  <!--Устанавливает переодичность выполнения дневной рутины. Массив, что бы добавить ещё время - добавить строку типа: <string>08:22</string>-->
+  <NoonPostTime>
+    <Monday>
+      <!--Понедельник-->
+      <string>09:52</string>
+      <string>13:18</string>
+    </Monday>
+    <Tuesday>
+      <!--Вторник-->
+      <string>09:43</string>
+      <string>13:11</string>
+    </Tuesday>
+    <Wednesday>
+      <!--Среда-->
+      <string>09:45</string>
+      <string>13:41</string>
+    </Wednesday>
+    <Thursday>
+      <!--Четверг-->
+      <string>09:56</string>
+      <string>12:31</string>
+    </Thursday>
+    <Friday>
+      <!--Пятница-->
+      <string>09:55</string>
+      <string>11:21</string>
+    </Friday>
+    <Saturday>
+      <!--Субота-->
+      <string>10:52</string>
+    </Saturday>
+    <Sunday>
+      <!--Воскресенье-->
+      <string>11:22</string>
+    </Sunday>
+  </NoonPostTime>
+  <!--Устанавливает переодичность выполнения вечерней рутины. Массив, что бы добавить ещё время - добавить строку типа: <string>08:22</string>-->
+  <EveningPostTime>
+    <Monday>
+      <!--Понедельник-->
+      <string>19:19</string>
+    </Monday>
+    <Tuesday>
+      <!--Вторник-->
+      <string>19:21</string>
+    </Tuesday>
+    <Wednesday>
+      <!--Среда-->
+      <string>19:20</string>
+    </Wednesday>
+    <Thursday>
+      <!--Четверг-->
+      <string>19:19</string>
+    </Thursday>
+    <Friday>
+      <!--Пятница-->
+      <string>19:29</string>
+    </Friday>
+    <Saturday>
+      <!--Субота-->
+      <string>19:24</string>
+    </Saturday>
+    <Sunday>
+      <!--Воскресенье-->
+      <string>19:23</string>
+    </Sunday>
+  </EveningPostTime>
+  <!--Устанавливает переодичность выполнения ночной рутины. Массив, что бы добавить ещё время - добавить строку типа: <string>08:22</string>-->
+  <MidnightPostTime>
+    <Monday>
+      <!--Понедельник-->
+      <string>09:22</string>
+    </Monday>
+    <Tuesday>
+      <!--Вторник-->
+      <string>9:29</string>
+    </Tuesday>
+    <Wednesday>
+      <!--Среда-->
+      <string>9:31</string>
+    </Wednesday>
+    <Thursday>
+      <!--Четверг-->
+      <string>9:23</string>
+    </Thursday>
+    <Friday>
+      <!--Пятница-->
+      <string>9:26</string>
+    </Friday>
+    <Saturday>
+      <!--Субота-->
+      <string>10:22</string>
+    </Saturday>
+    <Sunday>
+      <!--Воскресенье-->
+      <string>11:22</string>
+    </Sunday>
+  </MidnightPostTime>
+  <!--Устанавливает переодичность выполнения месячной рутины. Массив, что бы добавить ещё время - добавить строку типа: <string>08:22</string>-->
+  <MonthPostTime>
+    <Monday>
+      <!--Понедельник-->
+      <string>20:11</string>
+    </Monday>
+    <Tuesday>
+      <!--Вторник-->
+      <string>20:11</string>
+    </Tuesday>
+    <Wednesday>
+      <!--Среда-->
+      <string>20:11</string>
+    </Wednesday>
+    <Thursday>
+      <!--Четверг-->
+      <string>20:11</string>
+    </Thursday>
+    <Friday>
+      <!--Пятница-->
+      <string>20:11</string>
+    </Friday>
+    <Saturday>
+      <!--Субота-->
+      <string>20:11</string>
+    </Saturday>
+    <Sunday>
+      <!--Воскресенье-->
+      <string>20:11</string>
+    </Sunday>
+  </MonthPostTime>
+
+  <!--Промежуток времени, через который будут удалены утренние посты. Значение указывается в часах. Для каждого поста идёт свой отсчёт-->
+  <MorningPostDeletePerod>11</MorningPostDeletePerod>
+  <!--Промежуток времени, через который будут удалены дневные посты. Значение указывается в часах. Для каждого поста идёт свой отсчёт-->
+  <NoonPostDeletePerod>240</NoonPostDeletePerod>
+  <!--Промежуток времени, через который будут удалены вечерние посты. Значение указывается в часах. Для каждого поста идёт свой отсчёт-->
+  <EveningPostDeletePerod>11</EveningPostDeletePerod>
+  <!--Промежуток времени, через который будут удалены ночные посты. Значение указывается в часах. Для каждого поста идёт свой отсчёт-->
+  <MidnightPostDeletePerod>240</MidnightPostDeletePerod>
+  <!--Промежуток времени, через который будут удалены месячные посты. Значение указывается в часах. Для каждого поста идёт свой отсчёт-->
+  <MonthPostDeletePeriod>48</MonthPostDeletePeriod>
+
+  <!--Директория из которой случайно беруться картинки и текст для утреннего поста-->
+  <MorningPostDirectory>Data\Morning</MorningPostDirectory>
+  <!--Директория из которой случайно беруться картинки и текст для дневного поста-->
+  <NoonPostDirectory>Data\Noon</NoonPostDirectory>
+  <!--Директория из которой случайно беруться картинки и текст для вечернего поста-->
+  <EveningPostDirectory>Data\Evening</EveningPostDirectory>
+  <!--Директория из которой случайно беруться картинки и текст для ночного поста-->
+  <MidnightPostDirectory>Data\Midnight</MidnightPostDirectory>
+  <!--Директория из которой случайно беруться картинки и текст для ночного поста-->
+  <MonthPostDirectory>Data\Month</MonthPostDirectory>
+
+  <!--Включает(true)/Отключает(false) утренние посты-->
+  <MorningPostEnabled>true</MorningPostEnabled>
+  <!--Включает(true)/Отключает(false) дневные посты-->
+  <NoonPostEnabled>true</NoonPostEnabled>
+  <!--Включает(true)/Отключает(false) вечерние посты-->
+  <EveningPostEnabled>true</EveningPostEnabled>
+  <!--Включает(true)/Отключает(false) ночные посты-->
+  <MidnightPostEnabled>true</MidnightPostEnabled>
+  <!--Включает(true)/Отключает(false) месячные посты-->
+  <MonthPostEnabled>true</MonthPostEnabled>
+
+  <!--ГОРОСКОП-->
+  <!--Ссылка на ресурс с гороскопом-->
+  <HoroscopeUrl>https://my-calend.ru/moon/today</HoroscopeUrl>
+  <!--Включает(true)/Отключает(false) пост гороскопа-->
+  <HoroscopeEnabled>true</HoroscopeEnabled>
+  <!--Промежуток времени, через который будут удалены посты с гороскопом. Значение указывается в часах. Для каждого поста идёт свой отсчёт-->
+  <HoroscopeMsgDeletePeriod>12</HoroscopeMsgDeletePeriod>
+  <!--Условный прямоугольник для захвата изображения со страницы.
+  X - смещение начальной точки прямоугольника по горизонтали в виде коэфициента
+  Y - смещение начальной точки прямоугольника по вертикали
+  Width - ширина прямоугольника относительно страницы
+  Height - высота прямоугольника относительно страницы
+  ВНИМАНИЕ: не устанавливать коэфициенты так, что бы суммы(X + Width) или (Y + Height) превышали 1.0!-->
+  <HoroscopeInfoRect>
+    <X>0.0</X>
+    <Y>0.22</Y>
+    <Width>0.97</Width>
+    <Height>0.4</Height>
+  </HoroscopeInfoRect>
+  <!--Устанавливает переодичность постинга гороскопа. Массив, что бы добавить ещё время - добавить строку типа: <string>08:22</string>-->
+  <HoroscopePostTime>
+    <Monday>
+      <!--Понедельник-->
+      <string>08:27</string>
+    </Monday>
+    <Tuesday>
+      <!--Вторник-->
+      <string>08:27</string>
+    </Tuesday>
+    <Wednesday>
+      <!--Среда-->
+      <string>08:27</string>
+    </Wednesday>
+    <Thursday>
+      <!--Четверг-->
+      <string>08:27</string>
+    </Thursday>
+    <Friday>
+      <!--Пятница-->
+      <string>08:27</string>
+    </Friday>
+    <Saturday>
+      <!--Субота-->
+      <string>09:28</string>
+    </Saturday>
+    <Sunday>
+      <!--Воскресенье-->
+      <string>10:28</string>
+    </Sunday>
+  </HoroscopePostTime>
+  <HoroscopeTextPath>Data\Horoscope</HoroscopeTextPath>
+
+  <!--КУРСЫ ВАЛЮТ-->
+  <!--Ссылка на ресурс по криптовалюте-->
+  <CryptoCurrencyUrl>https://coin360.io</CryptoCurrencyUrl>
+  <!--Ссылка на ресурс с информацией по фиату. Менять только вместе с переработкой логики программы!-->
+  <FiatCurrencyUrl>http://free.currencyconverterapi.com/api/v5/convert?q=</FiatCurrencyUrl>
+  <!--Максимальное количество знаков фиатных пар после точки-->
+  <FiatCurrencyDigits>2</FiatCurrencyDigits>
+  <!--Надпись рядом с логотипом-->
+  <LogoText>t.me/buisness911
+Proficite</LogoText>
+  <!--Включает(true)/Отключает(false) пост с информацией по валютам-->
+  <CryptoCurrencyEnabled>true</CryptoCurrencyEnabled>
+  <!--Промежуток времени, через который будут удалены посты с валютной информацией. Значение указывается в часах. Для каждого поста идёт свой отсчёт-->
+  <CryptoCurrencyMsgDeletePeriod>22</CryptoCurrencyMsgDeletePeriod>
+  <!--Устанавливает переодичность постинга курса валют. Массив, что бы добавить ещё время - добавить строку типа: <string>08:22</string>-->
+  <CryptoCurrencyPostTime>
+    <Monday>
+      <!--Понедельник-->
+      <string>08:32</string>
+    </Monday>
+    <Tuesday>
+      <!--Вторник-->
+      <string>08:32</string>
+    </Tuesday>
+    <Wednesday>
+      <!--Среда-->
+      <string>08:32</string>
+    </Wednesday>
+    <Thursday>
+      <!--Четверг-->
+      <string>08:32</string>
+    </Thursday>
+    <Friday>
+      <!--Пятница-->
+      <string>08:32</string>
+    </Friday>
+    <Saturday>
+      <!--Субота-->
+      <string>09:33</string>
+    </Saturday>
+    <Sunday>
+      <!--Воскресенье-->
+      <string>10:33</string>
+    </Sunday>
+  </CryptoCurrencyPostTime>
+  <!--Условный прямоугольник для захвата изображения со страницы.
+  X - смещение начальной точки прямоугольника по горизонтали в виде коэфициента
+  Y - смещение начальной точки прямоугольника по вертикали
+  Width - ширина прямоугольника относительно страницы
+  Height - высота прямоугольника относительно страницы
+  ВНИМАНИЕ: не устанавливать коэфициенты так, что бы суммы(X + Width) или (Y + Height) превышали 1.0!-->
+  <CryptoCurrencyInfoRect>
+    <X>0</X>
+    <Y>0.04</Y>
+    <Width>1</Width>
+    <Height>0.92</Height>
+  </CryptoCurrencyInfoRect>
+</XmlConfig>
